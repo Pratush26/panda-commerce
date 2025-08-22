@@ -27,7 +27,7 @@
   <nav class="flex items-center justify-between gap-8 py-4 w-11/12 mx-auto">
     <span class="flex items-center justify-center gap-2">
       <img src="./assets/logo.svg" alt="Logo" class="h-10 object-contain" />
-      <p class="font-semibold text-3xl">PANDA</p>
+      <p class="font-semibold text-3xl hidden sm:block">PANDA</p>
     </span>
     <form
       class="border-1 border-gray-300 bg-gray-200 rounded-full flex flex-grow items-center justify-between px-4 py-2">
@@ -36,7 +36,7 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
-    <span class="flex items-center justify-center gap-6">
+    <span class=" items-center justify-center gap-6 hidden md:flex">
       <a href="#hero">Home</a>
       <div class="relative group">
         <a href="#">
@@ -57,7 +57,7 @@
     </span>
   </nav>
   <main>
-    <section id="hero" class="grid grid-cols-1 md:grid-cols-[65%_35%] items-center justify-items-center gap-8 w-5/6 p-10 rounded-xl mx-auto bg-rose-100">
+    <section id="hero" class="grid grid-cols-1 md:grid-cols-[65%_35%] items-center justify-items-center gap-8 w-5/6 p-10 rounded-xl mx-auto my-6 bg-rose-100">
       <div class="space-y-6 order-2 md:order-1">
         <h1 class="font-bold text-5xl">Mi LED TV 4A PRO 32</h1>
         <small>
@@ -70,133 +70,132 @@
           BUY NOW <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-      <img src="./assets/images/banner-images/tv.png" alt="Home image" class="mix-blend-darken h-3/4 object-contain order-1 md:order-2" />
+      <img src="./assets/images/banner-images/tv.png" alt="Home image" class="mix-blend-darken h-5/6 object-contain order-1 md:order-2" />
     </section>
-
-    <!-- Category section -->
-    <section class="categories container">
-      <h2 class="common-section-title">Categories</h2>
-      <div class="categories-card-container">
-        <div class="category-card">
-          <h3>Watch</h3>
-          <img src="./assets/images/categories/watch.png" alt="" />
-        </div>
-        <div class="category-card">
-          <h3>Bag</h3>
-          <img src="./assets/images/categories/bag.png" alt="" />
-        </div>
-        <div class="category-card">
-          <h3>Shoes</h3>
-          <img src="./assets/images/categories/shoes.png" alt="" />
-        </div>
+    <section class="w-5/6 mx-auto space-y-6">
+      <h2 class="font-bold text-4xl">Categories</h2>
+      <div class="flex items-center justify-between gap-8 flex-wrap lg:flex-nowrap">
+        <a href="#" class="flex items-center justify-around bg-amber-500 rounded py-6 px-10 w-full">
+          <h3 class="text-white font-semibold text-3xl">Watch</h3>
+          <img src="./assets/images/categories/watch.png" alt="product image" class="max-h-20" />
+        </a>
+        <a href="#" class="flex items-center justify-around bg-rose-500 rounded py-6 px-10 w-full">
+          <h3 class="text-white font-semibold text-3xl">Bag</h3>
+          <img src="./assets/images/categories/bag.png" alt="product image" class="max-h-20" />
+        </a>
+        <a href="#" class="flex items-center justify-around bg-indigo-500 rounded py-6 px-10 w-full">
+          <h3 class="text-white font-semibold text-3xl">Shoes</h3>
+          <img src="./assets/images/categories/shoes.png" alt="product image" class="max-h-20" />
+        </a>
       </div>
     </section>
-
-    <!-- Shoes and backpack section -->
-    <section class="shoes-backpack-parent">
-      <!-- Shoes -->
-      <div class="shoes-section container">
-        <div class="shoes-backpack-section-title-parent">
-          <h2>Shoes</h2>
-          <p>See All</p>
+    <section class="bg-gray-200 my-6">
+      <div>
+        <div class="flex items-center justify-center gap-3 w-5/6 mx-auto py-8">
+          <span class="h-[1.5px] w-full bg-gray-900 rounded"></span>
+          <h3 class="font-semibold text-3xl">Shoes</h3>
+          <span class="h-[1.5px] w-full bg-gray-900 rounded"></span>
         </div>
-        <div class="shoe-card-container">
-          <div class="shoe-card">
-            <img src="./assets/images/shoes/shoe-1.png" alt="" />
-            <h2>Reebok Dart Men’s Shoes</h2>
-            <p>
+        <article class="grid grid-cols-1 lg:grid-cols-3 place-content-between w-11/12 mx-auto gap-8">
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/shoes/shoe-1.png" alt="Shoes" />
+            <h2 class="font-bold text-xl">Reebok Dart Men's Shoes</h2>
+            <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
             </p>
-            <span class="card-price">$1289</span>
-            <button class="panda-btn">
+            <p class="text-xl font-medium">$1289</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
               BUY NOW <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-          <div class="shoe-card">
-            <img src="./assets/images/shoes/shoe-2.png" alt="" />
-            <h2>Reebok Pump</h2>
-            <p>
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/shoes/shoe-2.png" alt="Shoes" />
+            <h2 class="font-bold text-xl">Reebok Pump</h2>
+            <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
             </p>
-            <span class="card-price">$799</span>
-            <button class="panda-btn">
+            <p class="text-xl font-medium">$799</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
               BUY NOW <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-          <div class="shoe-card">
-            <img src="./assets/images/shoes/shoe-3.png" alt="" />
-            <h2>Reebok All Terrain</h2>
-            <p>
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/shoes/shoe-3.png" alt="Shoes" />
+            <h2 class="font-bold text-xl">Reebok All Terrain</h2>
+            <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
             </p>
-            <span class="card-price">$1289</span>
-            <button class="panda-btn">
+            <p class="text-xl font-medium">$1289</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
               BUY NOW <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-        </div>
-      </div>
-
-      <!-- Backpack -->
-      <div class="shoes-section container" id="backpack-section">
-        <div class="shoes-backpack-section-title-parent">
-          <h2>Backpack</h2>
-          <p>See All</p>
-        </div>
-        <div class="shoe-card-container">
-          <div class="shoe-card">
-            <img src="./assets/images/bags/bag-1.png" alt="" />
-            <h2>Ison Backpack</h2>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint.
-            </p>
-            <span class="card-price">$1289</span>
-            <button class="panda-btn">
-              BUY NOW <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div class="shoe-card">
-            <img src="./assets/images/bags/bag-2.png" alt="" />
-            <h2>Biaowang Backpack</h2>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint.
-            </p>
-            <span class="card-price">$799</span>
-            <button class="panda-btn">
-              BUY NOW <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div class="shoe-card">
-            <img src="./assets/images/bags/bag-3.png" alt="" />
-            <h2>Dxyizu WS54 Smart</h2>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint.
-            </p>
-            <span class="card-price">$1289</span>
-            <button class="panda-btn">
-              BUY NOW <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
+        </article>
+        <div class="flex justify-end w-11/12 p-5">
+          <button class="text-amber-800">See all</button>
         </div>
       </div>
-    </section>
-
-    <!-- Contact us section -->
-    <section class="contact-us-parent container">
-      <h2>LET'S STAY IN TOUCH</h2>
-      <p>Get updates on sales specials and more</p>
-      <div class="contact-inp-btn-parent">
-        <input type="text" placeholder="Enter your email" />
-        <button class="panda-btn">Send</button>
+      <div>
+        <div class="flex items-center justify-center gap-3 w-5/6 mx-auto py-8">
+          <span class="h-[1.5px] w-full bg-gray-900 rounded"></span>
+          <h3 class="font-semibold text-3xl">Backpack</h3>
+          <span class="h-[1.5px] w-full bg-gray-900 rounded"></span>
+        </div>
+        <article class="grid grid-cols-1 lg:grid-cols-3 place-content-between w-11/12 mx-auto gap-8">
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/bags/bag-1.png" alt="bag image" />
+            <h2 class="font-bold text-xl">Ison Backpack</h2>
+            <p class="text-sm text-gray-600 font-medium">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <p class="text-xl font-medium">$1289</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/bags/bag-2.png" alt="bag image" />
+            <h2 class="font-bold text-xl">Biaowang Backpack</h2>
+            <p class="text-sm text-gray-600 font-medium">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <p class="text-xl font-medium">$799</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
+            <img src="./assets/images/bags/bag-3.png" alt="bag image" />
+            <h2 class="font-bold text-xl">Dxyizu WS54 Smart</h2>
+            <p class="text-sm text-gray-600 font-medium">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <p class="text-xl font-medium">$1289</p>
+            <button class="bg-black text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <div class="flex justify-end w-11/12 p-5">
+          <button class="text-amber-800">See all</button>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="m-16 bg-rose-50 flex items-center justify-center flex-col gap-4 px-4 py-10">
+    <h2 class="font-bold text-2xl">LET'S STAY IN TOUCH</h2>
+    <p>Get updates on sales specials and more</p>
+    <form action="" class="flex flex-col sm:flex-row">
+      <input type="text" placeholder="Enter your email" class="bg-white focus:outline-none px-8 py-3" />
+      <button class="bg-rose-400 text-white px-8 py-3">Send</button>
+    </form>
+  </footer>
 </body>
 
 </html>
