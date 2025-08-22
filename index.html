@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda commerce</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Custom css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav class="flex items-center justify-between gap-8 py-4 w-11/12 mx-auto">
+    <span class="flex items-center justify-center gap-2">
+      <img src="./assets/logo.svg" alt="Logo" class="h-10 object-contain" />
+      <p class="font-semibold text-3xl">PANDA</p>
+    </span>
+    <form
+      class="border-1 border-gray-300 bg-gray-200 rounded-full flex flex-grow items-center justify-between px-4 py-2">
+      <input type="text" placeholder="Search" class="focus:outline-none flex-grow" />
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+    <span class="flex items-center justify-center gap-6">
+      <a href="#hero">Home</a>
+      <div class="relative group">
+        <a href="#">
+          Products <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <!-- Dropdown menu -->
+        <ul
+          class="absolute left-0 mt-2 w-40 bg-amber-300 text-gray-800 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50">
+          <li><a href="#backpack-section" class="block px-4 py-2 hover:text-white hover:bg-rose-700 rounded-t">Bags</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">Shoes</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">TV</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">Smartphone</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">Airbuds</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700 rounded-b">Watch</a></li>
+        </ul>
+      </div>
+      <a href="#">Contact Us</a>
+    </span>
+  </nav>
+  <main>
+    <section id="hero" class="grid grid-cols-1 md:grid-cols-[65%_35%] items-center justify-items-center gap-8 w-5/6 p-10 rounded-xl mx-auto bg-rose-100">
+      <div class="space-y-6 order-2 md:order-1">
+        <h1 class="font-bold text-5xl">Mi LED TV 4A PRO 32</h1>
+        <small>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet
+        </small>
+        <p class="text-rose-700 text-2xl">$1289</p>
+        <button class="bg-rose-500 font-bold text-white px-6 py-3 rounded-full hover:bg-rose-600 transition-all duration-300 cursor-pointer">
+          BUY NOW <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <img src="./assets/images/banner-images/tv.png" alt="Home image" class="mix-blend-darken h-3/4 object-contain order-1 md:order-2" />
+    </section>
+
+    <!-- Category section -->
+    <section class="categories container">
+      <h2 class="common-section-title">Categories</h2>
+      <div class="categories-card-container">
+        <div class="category-card">
+          <h3>Watch</h3>
+          <img src="./assets/images/categories/watch.png" alt="" />
+        </div>
+        <div class="category-card">
+          <h3>Bag</h3>
+          <img src="./assets/images/categories/bag.png" alt="" />
+        </div>
+        <div class="category-card">
+          <h3>Shoes</h3>
+          <img src="./assets/images/categories/shoes.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Shoes and backpack section -->
+    <section class="shoes-backpack-parent">
+      <!-- Shoes -->
+      <div class="shoes-section container">
+        <div class="shoes-backpack-section-title-parent">
+          <h2>Shoes</h2>
+          <p>See All</p>
+        </div>
+        <div class="shoe-card-container">
+          <div class="shoe-card">
+            <img src="./assets/images/shoes/shoe-1.png" alt="" />
+            <h2>Reebok Dart Men’s Shoes</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$1289</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="shoe-card">
+            <img src="./assets/images/shoes/shoe-2.png" alt="" />
+            <h2>Reebok Pump</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$799</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="shoe-card">
+            <img src="./assets/images/shoes/shoe-3.png" alt="" />
+            <h2>Reebok All Terrain</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$1289</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backpack -->
+      <div class="shoes-section container" id="backpack-section">
+        <div class="shoes-backpack-section-title-parent">
+          <h2>Backpack</h2>
+          <p>See All</p>
+        </div>
+        <div class="shoe-card-container">
+          <div class="shoe-card">
+            <img src="./assets/images/bags/bag-1.png" alt="" />
+            <h2>Ison Backpack</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$1289</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="shoe-card">
+            <img src="./assets/images/bags/bag-2.png" alt="" />
+            <h2>Biaowang Backpack</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$799</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="shoe-card">
+            <img src="./assets/images/bags/bag-3.png" alt="" />
+            <h2>Dxyizu WS54 Smart</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+            <span class="card-price">$1289</span>
+            <button class="panda-btn">
+              BUY NOW <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us section -->
+    <section class="contact-us-parent container">
+      <h2>LET'S STAY IN TOUCH</h2>
+      <p>Get updates on sales specials and more</p>
+      <div class="contact-inp-btn-parent">
+        <input type="text" placeholder="Enter your email" />
+        <button class="panda-btn">Send</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

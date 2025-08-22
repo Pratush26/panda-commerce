@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+small{
+  font-weight: 500;
+  color: rgb(91, 90, 90);
+}
