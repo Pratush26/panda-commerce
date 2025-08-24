@@ -29,13 +29,14 @@
       <img src="./assets/logo.svg" alt="Logo" class="h-10 object-contain" />
       <p class="font-semibold text-3xl hidden sm:block">PANDA</p>
     </span>
-    <form
-      class="border-1 border-gray-300 bg-gray-200 rounded-full flex flex-grow items-center justify-between px-4 py-2">
+    <span
+      class="border-1 relative border-gray-300 bg-gray-200 rounded-full flex flex-grow items-center justify-between px-4 py-2">
       <input type="text" placeholder="Search" class="focus:outline-none flex-grow" />
-      <button type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </form>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <section id="suggestions"
+        class="absolute top-full left-0 w-full bg-white rounded-b-lg max-h-60 overflow-y-auto z-50 grid grid-flow-row rounded-sm">
+      </section>
+    </span>
     <span class=" items-center justify-center gap-6 hidden md:flex">
       <a href="#hero">Home</a>
       <div class="relative group">
@@ -45,7 +46,8 @@
         <!-- Dropdown menu -->
         <ul
           class="absolute left-0 mt-2 w-40 bg-amber-300 text-gray-800 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50">
-          <li><a href="#backpack-section" class="block px-4 py-2 hover:text-white hover:bg-rose-700 rounded-t">Bags</a></li>
+          <li><a href="#backpack-section" class="block px-4 py-2 hover:text-white hover:bg-rose-700 rounded-t">Bags</a>
+          </li>
           <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">Shoes</a></li>
           <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">TV</a></li>
           <li><a href="#" class="block px-4 py-2 hover:text-white hover:bg-rose-700">Smartphone</a></li>
@@ -57,7 +59,8 @@
     </span>
   </nav>
   <main>
-    <section id="hero" class="grid grid-cols-1 md:grid-cols-[65%_35%] items-center justify-items-center gap-8 w-5/6 p-10 rounded-xl mx-auto my-6 bg-rose-100">
+    <section id="hero"
+      class="grid grid-cols-1 md:grid-cols-[65%_35%] items-center justify-items-center gap-8 w-5/6 p-10 rounded-xl mx-auto my-6 bg-rose-100">
       <div class="space-y-6 order-2 md:order-1">
         <h1 class="font-bold text-5xl">Mi LED TV 4A PRO 32</h1>
         <small>
@@ -66,11 +69,13 @@
           veniam consequat sunt nostrud amet
         </small>
         <p class="text-rose-700 text-2xl">$1289</p>
-        <button class="bg-rose-500 font-bold text-white px-6 py-3 rounded-full hover:bg-rose-600 transition-all duration-300 cursor-pointer">
+        <button
+          class="bg-rose-500 font-bold text-white px-6 py-3 rounded-full hover:bg-rose-600 transition-all duration-300 cursor-pointer">
           BUY NOW <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-      <img src="./assets/images/banner-images/tv.png" alt="Home image" class="mix-blend-darken h-5/6 object-contain order-1 md:order-2" />
+      <img src="./assets/images/banner-images/tv.png" alt="Home image"
+        class="mix-blend-darken h-5/6 object-contain order-1 md:order-2" />
     </section>
     <section class="w-5/6 mx-auto space-y-6">
       <h2 class="font-bold text-4xl">Categories</h2>
@@ -89,7 +94,7 @@
         </a>
       </div>
     </section>
-    <section class="bg-gray-200 my-6">
+    <section id="products" class="bg-gray-200 my-6">
       <div>
         <div class="flex items-center justify-center gap-3 w-5/6 mx-auto py-8">
           <span class="h-[1.5px] w-full bg-gray-900 rounded"></span>
@@ -99,7 +104,7 @@
         <article class="grid grid-cols-1 lg:grid-cols-3 place-content-between w-11/12 mx-auto gap-8">
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/shoes/shoe-1.png" alt="Shoes" />
-            <h2 class="font-bold text-xl">Reebok Dart Men's Shoes</h2>
+            <h4 class="font-bold text-xl">Reebok Dart Men's Shoes</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -111,7 +116,7 @@
           </div>
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/shoes/shoe-2.png" alt="Shoes" />
-            <h2 class="font-bold text-xl">Reebok Pump</h2>
+            <h4 class="font-bold text-xl">Reebok Pump</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -123,7 +128,7 @@
           </div>
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/shoes/shoe-3.png" alt="Shoes" />
-            <h2 class="font-bold text-xl">Reebok All Terrain</h2>
+            <h4 class="font-bold text-xl">Reebok All Terrain</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -147,7 +152,7 @@
         <article class="grid grid-cols-1 lg:grid-cols-3 place-content-between w-11/12 mx-auto gap-8">
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/bags/bag-1.png" alt="bag image" />
-            <h2 class="font-bold text-xl">Ison Backpack</h2>
+            <h4 class="font-bold text-xl">Ison Backpack</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -159,7 +164,7 @@
           </div>
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/bags/bag-2.png" alt="bag image" />
-            <h2 class="font-bold text-xl">Biaowang Backpack</h2>
+            <h4 class="font-bold text-xl">Biaowang Backpack</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -171,7 +176,7 @@
           </div>
           <div class="bg-white flex flex-col items-center justify-center gap-4 rounded-lg py-4 px-6">
             <img src="./assets/images/bags/bag-3.png" alt="bag image" />
-            <h2 class="font-bold text-xl">Dxyizu WS54 Smart</h2>
+            <h4 class="font-bold text-xl">Dxyizu WS54 Smart</h4>
             <p class="text-sm text-gray-600 font-medium">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
@@ -196,6 +201,40 @@
       <button class="bg-rose-400 text-white px-8 py-3">Send</button>
     </form>
   </footer>
+  <script>
+    const searchInput = document.querySelector("nav input");
+    let products = document.querySelectorAll("#products h3, #products h4");
+    let suggestionsBox = document.getElementById("suggestions");
+    let productList = [];
+
+    products.forEach((el) => {
+      if (!el.id) {
+        el.id = el.textContent.replace(/[^A-Za-z0-9]+/g, ""); // Generate ID
+        el.text = el.textContent; // Ensure text content is set
+      }
+
+      productList.push(el.text);
+    });
+    
+    searchInput.addEventListener("keyup", function () {
+      if (!this.value) {
+        suggestionsBox.innerHTML = "";
+        return;
+      }
+      const query = this.value.toLowerCase().replace(/[^A-Za-z0-9]+/g, "");
+
+      // Find matches by id or text
+      const matches = productList.filter(item =>
+        item.toLowerCase().replace(/[^A-Za-z0-9]+/g, "").includes(query)
+      );
+
+      let suggestions = matches.map(match => {
+        return `<a href="#${match.replace(/[^A-Za-z0-9]+/g, "")}" class="px-4 py-2 hover:bg-rose-700 hover:text-white cursor-pointer">${match}</a>`;
+      }).join("");
+      suggestionsBox.innerHTML = suggestions
+    });
+
+  </script>
 </body>
 
 </html>
